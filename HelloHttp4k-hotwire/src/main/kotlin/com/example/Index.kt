@@ -7,6 +7,9 @@ import org.http4k.core.with
 import org.http4k.routing.bind
 import org.http4k.template.ViewModel
 
+/**
+ * This endpoint serves a simple Index view.
+ */
 fun index(renderers: SelectingViewModelRenderers) =
     "/" bind GET to { Response(OK).with(renderers(it) of Index) }
 

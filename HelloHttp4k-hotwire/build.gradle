@@ -19,9 +19,9 @@ test {
 }
 
 dependencies {
+    implementation "org.http4k:http4k-core"
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:${kotlinVersion}"
     implementation platform("org.http4k:http4k-bom:${http4kVersion}")
-    implementation "org.http4k:http4k-core"
     implementation "org.http4k:http4k-format-moshi"
     implementation "org.http4k:http4k-server-undertow"
     implementation "org.http4k:http4k-template-handlebars"

@@ -13,6 +13,9 @@ import java.time.format.FormatStyle.MEDIUM
 import java.util.concurrent.Executors.newSingleThreadScheduledExecutor
 import java.util.concurrent.TimeUnit.MILLISECONDS
 
+/**
+ * This is an SSE which ticks the time to the browser using a standard http4k view
+ */
 fun time(renderer: TemplateRenderer): RoutingSseHandler {
     val executor = newSingleThreadScheduledExecutor()
 

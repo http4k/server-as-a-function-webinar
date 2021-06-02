@@ -29,6 +29,8 @@ test {
 
 dependencies {
     implementation "org.http4k:http4k-core:${http4kVersion}"
+    implementation "org.http4k:http4k-format-moshi:${http4kVersion}"
+    implementation "org.http4k:http4k-server-undertow:${http4kVersion}"
     implementation "org.http4k:http4k-cloudnative:${http4kVersion}"
     implementation "org.http4k:http4k-security-oauth:${http4kVersion}"
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:${kotlinVersion}"

@@ -30,6 +30,8 @@ const lambdaFunction = new aws.lambda.Function("hello-http4k-aws", {
     code: new pulumi.asset.FileArchive("build/distributions/HelloHttp4k.zip"),
     handler: "com.example.Pokemon4kLambda",
     role: defaultRole.arn,
+    memorySize: 512,
+    timeout: 30,
     runtime: "java11"
 });
 

@@ -3,7 +3,6 @@
 .gradle/
 build/
 .DS_Store
-**/*.actual
 classes/
 /site/
 out/
