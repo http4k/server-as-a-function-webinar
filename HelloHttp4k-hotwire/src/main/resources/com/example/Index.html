@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    {{> head}}
+    <title>http4k Hotwire demo</title>
+    <script type="text/javascript">
+        if (window["EventSource"] && window["Turbo"]) {
+            Turbo.connectStreamSource(new EventSource("/time"));
+        } else {
+            console.warn("Turbo Streams not available");
+        }
+    </script>
+</head>
+<body>
+
+<h1>Hello-Http4k Hotwire demo</h1>
+
+<section>
+    <h1>Time - via SSE</h1>
+    <div><span id="time"><h1>waiting...</h1></span></div>
+</section>
+
+<section>
+    <h2>Loading Pokédex - via Turbo-Streams</h2>
+    <form action="/find" method="post">
+        <button type="submit">Find next</button>
+    </form>
+    <div>
+        <ul id="find"></ul>
+    </div>
+</section>
+
+</body>
+</html>

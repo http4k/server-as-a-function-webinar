@@ -1,0 +1,3 @@
+name: HelloHttp4k-Serverless-GraalVm
+runtime: nodejs
+description: http4k Lambda deployment on the http4k runtime with GraalVm

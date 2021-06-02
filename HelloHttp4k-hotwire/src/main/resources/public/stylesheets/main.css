@@ -1,0 +1,10 @@
+body {
+    margin: 1rem;
+    background-image: url("/background.png");
+    background-size: 800px 400px;
+}
+
+.turbo-progress-bar {
+    height: 15px;
+    background-color: fuchsia;
+}
