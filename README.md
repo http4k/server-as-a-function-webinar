@@ -1,6 +1,6 @@
 # JetBrains: http4k Server as a Function Webinar
 
-See a recording of the Webinar [here]().
+See a recording of the Webinar [here](https://www.youtube.com/watch?v=NjoCjupV8HE).
 
 Code accompanying the Webinar.
 
